@@ -1,4 +1,4 @@
-#"Exercicio proposto: destacar produtos mais vendidos, meses que o faturamento cai, resumo geral"
+'#"Exercicio proposto: destacar produtos mais vendidos, meses que o faturamento cai, resumo geral"
 
 import numpy as np
 import pandas as pd
@@ -6,7 +6,7 @@ import matplotlib as mp
 import matplotlib.pyplot as plt
 
 
-# passo 1 - carregar dados 
+# passo 1 - carregar dados
 
 df = pd.read_csv("data/superstore.csv", encoding="latin1")
 
@@ -24,7 +24,7 @@ print(df.dtypes)
 print("\nValores nulos por colunas: ")
 print(df.isnull().sum())
 
-#converter Order Date de texto para data 
+#converter Order Date de texto para data
 df['Order Date'] = pd.to_datetime(df['Order Date'])
 
 # =======Métricas========
